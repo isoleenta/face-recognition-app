@@ -12,7 +12,7 @@ class FriendsFace extends Model
     protected $fillable = [
         'name',
         'encoded_model',
-        'user_id'
+        'user_id',
     ];
 
     public function user()

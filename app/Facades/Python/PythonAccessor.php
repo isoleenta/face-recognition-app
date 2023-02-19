@@ -7,7 +7,8 @@ use Response;
 
 class PythonAccessor
 {
-    public function __construct() {
+    public function __construct()
+    {
         //
     }
 
@@ -18,7 +19,7 @@ class PythonAccessor
         abort_if(
             $result->failed(),
             Response::BAD_REQUEST,
-            "Fail to run python script"
+            'Fail to run python script'
         );
 
         return $result->output();

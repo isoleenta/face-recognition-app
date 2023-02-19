@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use Hash;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Hash;
 
 class User extends Authenticatable
 {

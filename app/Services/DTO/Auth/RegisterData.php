@@ -2,7 +2,6 @@
 
 namespace App\Services\DTO\Auth;
 
-use Carbon\Carbon;
 use Hash;
 use Spatie\LaravelData\Data;
 

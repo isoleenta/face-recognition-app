@@ -13,7 +13,7 @@ class PhotoService
 {
     public function __construct(
         private FriendsFaceRepository $face_repository
-    ){
+    ) {
         //
     }
 
@@ -32,7 +32,7 @@ class PhotoService
         $this->face_repository->create([
             'name' => $friend_name,
             'encoded_model' => $encoded_model,
-            'user_id' => $user->id
+            'user_id' => $user->id,
         ]);
     }
 
@@ -72,6 +72,6 @@ class PhotoService
             '-recognize '.$full_to_image
         );
 
-        return str_replace(["\n", "None"], '',$encoded_model);
+        return str_replace(["\n", 'None'], '', $encoded_model);
     }
 }
