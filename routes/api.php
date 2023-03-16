@@ -23,3 +23,8 @@ Route::prefix('/photo')->name('photo.')->middleware('auth:api')->controller('Pho
     Route::post('/model', 'createModel')->name('create');
     Route::post('/recognize', 'recognizeFriends')->name('recognize');
 });
+
+Route::prefix('/photo')->name('photo.aws.')->middleware('auth:api')->controller('PhotoAwsController')->group(function () {
+    Route::post('/store-to-aws', 'storeImageToAWS')->name('store');
+//    Route::post('/recognize', 'recognizeFriends')->name('recognize');
+});

@@ -6,11 +6,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "bref/bref": "^1.7",
+        "bref/laravel-bridge": "^1.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/telescope": "^4.9",
         "laravel/tinker": "^2.8",
+        "league/flysystem-aws-s3-v3": "^3.12",
         "spatie/laravel-data": "^2.0",
         "symfony/process": "^6.2"
     },
